@@ -1,0 +1,79 @@
+*{
+  --color0: blue;
+  --color1: black;
+  --color2: darkblue;
+  --color5: teal;
+  font-size: 4vmin;
+  color: rgb(255, 255, 255);
+}
+.calco{
+  background-color: white;
+  margin-right: auto;
+  margin-left: auto;
+  border: solid var(--color2) 5px;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.clavier{
+  display: flex;
+  flex-direction: row;
+  padding:1%;
+}
+.clavier .row{
+  margin-bottom: 1%;
+}
+.clavier .row:last-child{
+  margin-bottom: 0%;
+}
+
+.row{
+  min-width: 62vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+.AC{
+  background-color: var(--color5);
+}
+.DEL{
+  background-color: red;
+}
+.DEL:hover{
+  background-color: red;
+}
+
+label{
+  width: 100%;
+  font-size: 200%;
+  height: 12vh;
+  text-align: right;
+  line-height: 12vh;
+  box-sizing: border-box;
+  padding-right: 6%;
+  background-color: var(--color1);
+}
+
+input{
+  height: 12vh;
+  width: 12vw;
+  font-weight: bold;
+  font-family: cursive;
+  background-color: var(--color2);
+  border: none;
+  box-sizing: border-box;
+  transition: all .5s ease;
+  cursor: pointer;
+}
+input:hover{
+  transform: translate(0,-6px);
+  box-shadow: 10px -10px 25px 0 hsl(0, 0%, 100%),-10px 10px 25px 0px rgba(39, 223, 255, 0.25);
+}
+input:active{
+transform: translateY(2px);
+}
+
